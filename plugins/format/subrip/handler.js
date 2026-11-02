@@ -33,6 +33,9 @@ function formatTime(value) {
 }
 function importFile(request) {
   if (request.target !== 'media-subtitle') reject('unsupported_input');
+  // The Rust host validates BCP 47; the package requires the confirmed bounded tag too.
+  if (typeof request.sourceLanguage !== 'string' || !request.sourceLanguage
+      || request.sourceLanguage.length > 255 || !/^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$/.test(request.sourceLanguage)) reject();
   const { file } = request;
   if (!shape(file, ['filename', 'mediaType', 'data']) || typeof file.filename !== 'string'
       || file.mediaType !== 'application/x-subrip') reject();
@@ -84,7 +87,7 @@ function exportTrack(request) {
 }
 export default async function run(request) {
   try {
-    const artifact = shape(request, ['target', 'file']) ? importFile(request)
+    const artifact = shape(request, ['target', 'file', 'sourceLanguage']) ? importFile(request)
       : shape(request, ['language', 'artifact']) ? exportTrack(request) : reject();
     return { status: 'ok', artifact };
   } catch (error) {

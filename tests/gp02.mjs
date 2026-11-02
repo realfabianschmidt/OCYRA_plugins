@@ -6,7 +6,7 @@ import run from '../plugins/format/subrip/handler.js';
 if (process.argv.length !== 4 || process.argv[2] !== '--reference') throw new Error('Usage: npm run test:reference -- --reference <gp02 directory>');
 const root = resolve(process.argv[3]);
 const json = (name) => JSON.parse(readFileSync(join(root, 'expected', name), 'utf8'));
-const input = (name) => ({ target: 'media-subtitle', file: { filename: name,
+const input = (name) => ({ sourceLanguage: 'en', target: 'media-subtitle', file: { filename: name,
   mediaType: 'application/x-subrip', data: { encoding: 'text', content: readFileSync(join(root, 'inputs', name), 'utf8') } } });
 // The frozen 2.x oracle and edit script use millisecond floats. Production code uses BigInt only.
 const ticks = (seconds) => String(BigInt(Math.round(seconds * 1000)) * 254016000n);

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import run from '../../plugins/format/subrip/handler.js';
-const input = (content) => ({ target: 'media-subtitle', file: {
+const input = (content) => ({ sourceLanguage: 'en', target: 'media-subtitle', file: {
   filename: 'sample.srt', mediaType: 'application/x-subrip', data: { encoding: 'text', content },
 } });
 
@@ -46,5 +46,21 @@ test('truncated and deterministically mutated small inputs never throw or emit a
     assert.ok(result.status === 'ok' || result.status === 'error');
     assert.deepEqual(Object.keys(result).sort(), result.status === 'ok' ? ['artifact', 'status'] : ['error', 'status']);
     if (result.status === 'error') assert.ok(['invalid_input', 'empty_input'].includes(result.error.code));
+  }
+});
+
+
+test('confirmed sourceLanguage is required and the import request stays closed', async () => {
+  const source = '1\n00:00:00,000 --> 00:00:01,000\nexact\n';
+  const request = input(source);
+  const expected = await run(request);
+  assert.equal(expected.status, 'ok');
+  for (const sourceLanguage of ['de', 'fr', 'en-US', 'x-private']) {
+    assert.deepEqual(await run({ ...request, sourceLanguage }), expected);
+  }
+  const missing = { ...request };
+  delete missing.sourceLanguage;
+  for (const invalid of [missing, ...[null, '', 'en_US', '?', 1, 'x'.repeat(256)].map(sourceLanguage => ({ ...request, sourceLanguage })), { ...request, other: true }]) {
+    assert.deepEqual(await run(invalid), { status: 'error', error: { code: 'invalid_input' } });
   }
 });

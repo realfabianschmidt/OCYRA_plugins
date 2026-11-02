@@ -10,7 +10,7 @@ const audit = join('plugins', 'audit', 'foundation-policy');
 
 test('SRT package preserves exact millisecond timestamps', async () => {
   const run = runSubrip;
-  const result = await run({ target: 'media-subtitle', file: {
+  const result = await run({ sourceLanguage: 'en', target: 'media-subtitle', file: {
     filename: 'sample.srt', mediaType: 'application/x-subrip',
     data: { encoding: 'text', content: '1\n00:59:59,499 --> 01:00:01,000\nHello\n' },
   } });
