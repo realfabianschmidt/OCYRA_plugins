@@ -1,0 +1,244 @@
+{
+  "target": "document-tabular",
+  "track": {
+    "sourceLanguage": "en",
+    "targetLanguages": [
+      "de"
+    ],
+    "documents": [
+      {
+        "id": "document-1",
+        "name": "messages.xlf",
+        "original": "messages.xlf",
+        "dataType": "plaintext",
+        "fileId": ""
+      }
+    ],
+    "units": [
+      {
+        "id": "document-1.welcome.title",
+        "key": "welcome.title",
+        "documentId": "document-1",
+        "source": "Welcome {name}",
+        "sourceMarkup": [
+          {
+            "kind": "text",
+            "text": "Welcome "
+          },
+          {
+            "kind": "code",
+            "id": "<x id=\"name\"/>",
+            "label": "{name}"
+          }
+        ],
+        "targets": [
+          {
+            "language": "de",
+            "text": "Willkommen {name}",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": [
+              {
+                "kind": "text",
+                "text": "Willkommen "
+              },
+              {
+                "kind": "code",
+                "id": "<x id=\"name\"/>",
+                "label": "{name}"
+              }
+            ]
+          }
+        ],
+        "context": "Home page title",
+        "notes": [
+          "Home page title"
+        ],
+        "reference": {
+          "version": "1.2",
+          "documentId": "document-1",
+          "fileId": "",
+          "unitId": "welcome.title",
+          "segmentId": ""
+        }
+      },
+      {
+        "id": "document-1.welcome.body",
+        "key": "welcome.body",
+        "documentId": "document-1",
+        "source": "Start a new project.",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "de",
+            "text": "Neues Projekt starten.",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "Landing page",
+        "notes": [
+          "Landing page"
+        ],
+        "reference": {
+          "version": "1.2",
+          "documentId": "document-1",
+          "fileId": "",
+          "unitId": "welcome.body",
+          "segmentId": ""
+        }
+      },
+      {
+        "id": "document-1.save.action",
+        "key": "save.action",
+        "documentId": "document-1",
+        "source": "Save changes",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "de",
+            "text": "Änderungen speichern",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "Toolbar action",
+        "notes": [
+          "Toolbar action"
+        ],
+        "reference": {
+          "version": "1.2",
+          "documentId": "document-1",
+          "fileId": "",
+          "unitId": "save.action",
+          "segmentId": ""
+        }
+      },
+      {
+        "id": "document-1.close.action",
+        "key": "close.action",
+        "documentId": "document-1",
+        "source": "Close project",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "de",
+            "text": "Projekt schließen",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "",
+        "notes": [],
+        "reference": {
+          "version": "1.2",
+          "documentId": "document-1",
+          "fileId": "",
+          "unitId": "close.action",
+          "segmentId": ""
+        }
+      },
+      {
+        "id": "document-1.export.action",
+        "key": "export.action",
+        "documentId": "document-1",
+        "source": "Export file",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "de",
+            "text": "Datei exportieren",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "",
+        "notes": [],
+        "reference": {
+          "version": "1.2",
+          "documentId": "document-1",
+          "fileId": "",
+          "unitId": "export.action",
+          "segmentId": ""
+        }
+      },
+      {
+        "id": "document-1.items.count",
+        "key": "items.count",
+        "documentId": "document-1",
+        "source": "{count} items",
+        "sourceMarkup": [
+          {
+            "kind": "code",
+            "id": "<x id=\"count\"/>",
+            "label": "{count}"
+          },
+          {
+            "kind": "text",
+            "text": " items"
+          }
+        ],
+        "targets": [
+          {
+            "language": "de",
+            "text": "{count} Einträge",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": [
+              {
+                "kind": "code",
+                "id": "<x id=\"count\"/>",
+                "label": "{count}"
+              },
+              {
+                "kind": "text",
+                "text": " Einträge"
+              }
+            ]
+          }
+        ],
+        "context": "Count label",
+        "notes": [
+          "Count label"
+        ],
+        "reference": {
+          "version": "1.2",
+          "documentId": "document-1",
+          "fileId": "",
+          "unitId": "items.count",
+          "segmentId": ""
+        }
+      },
+      {
+        "id": "document-1.done.message",
+        "key": "done.message",
+        "documentId": "document-1",
+        "source": "All done.",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "de",
+            "text": "Fertig.",
+            "reviewState": "rejected",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "",
+        "notes": [],
+        "reference": {
+          "version": "1.2",
+          "documentId": "document-1",
+          "fileId": "",
+          "unitId": "done.message",
+          "segmentId": ""
+        }
+      }
+    ],
+    "roundtripFile": null
+  }
+}

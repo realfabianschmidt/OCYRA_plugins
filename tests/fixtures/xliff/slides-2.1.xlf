@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.1" srcLang="en" trgLang="fr">
+  <file id="slides" original="slides.xlf">
+    <unit id="hero.title" name="hero.title"><notes><note>Slide heading</note></notes><segment id="s1"><source>Hello <ph id="name"/></source><target state="translated">Bonjour <ph id="name"/></target></segment></unit>
+    <unit id="hero.body"><segment id="s2"><source>Open the project.</source><target state="translated">Ouvrez le projet.</target></segment></unit>
+    <unit id="save.button"><segment id="s3"><source>Save</source><target state="translated">Enregistrer</target></segment></unit>
+    <unit id="close.button"><segment id="s4"><source>Close</source><target state="translated">Fermer</target></segment></unit>
+    <unit id="export.button"><notes><note>Toolbar</note></notes><segment id="s5"><source>Export</source><target state="translated">Exporter</target></segment></unit>
+    <unit id="items.count"><segment id="s6"><source><ph id="count"/> items</source><target state="translated"><ph id="count"/> éléments</target></segment></unit>
+    <unit id="done.message"><segment id="s7"><source>Done</source><target state="needs-review-translation">Terminé</target></segment></unit>
+  </file>
+</xliff>

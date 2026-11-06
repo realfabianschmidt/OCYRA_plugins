@@ -1,0 +1,6 @@
+{
+  "welcome": "Hello {name}, you have {count, plural, one {# message} other {# messages}}",
+  "nav": { "home": "Home", "deep": { "a.b": "Dotted" } },
+  "a.b": "Flat dotted",
+  "mustache": "Hi {{user}}"
+}

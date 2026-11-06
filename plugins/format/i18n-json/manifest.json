@@ -1,0 +1,37 @@
+{
+  "id": "format-plugin-i18n-json",
+  "name": "i18n JSON",
+  "version": "0.1.0",
+  "plugin_api_version": 1,
+  "role": "format",
+  "runtime": {
+    "mode": "quickjs"
+  },
+  "entry": "handler.js",
+  "capabilities": [],
+  "limits": {
+    "maxBatchItems": 50000,
+    "maxInputBytes": 8388608,
+    "maxOutputBytes": 8388608,
+    "timeoutMs": 5000,
+    "memoryBytes": 67108864
+  },
+  "description": "Import and export i18n JSON message files.",
+  "family": "format",
+  "format": {
+    "target": "document-tabular",
+    "directions": [
+      "import",
+      "export"
+    ],
+    "extensions": [
+      "json"
+    ]
+  },
+  "binary": false,
+  "locales": {
+    "en": "locales/en.json",
+    "de": "locales/de.json",
+    "fr": "locales/fr.json"
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2">
+  <file original="messages.xlf" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="welcome.title" resname="welcome.title"><source>Welcome <x id="name"/></source><target state="translated">Willkommen <x id="name"/></target><note>Home page title</note></trans-unit>
+      <trans-unit id="welcome.body"><source>Start a new project.</source><target state="translated">Neues Projekt starten.</target><note>Landing page</note></trans-unit>
+      <trans-unit id="save.action"><source>Save changes</source><target state="translated">Änderungen speichern</target><note>Toolbar action</note></trans-unit>
+      <trans-unit id="close.action"><source>Close project</source><target state="translated">Projekt schließen</target></trans-unit>
+      <trans-unit id="export.action"><source>Export file</source><target state="translated">Datei exportieren</target></trans-unit>
+      <trans-unit id="items.count"><source><x id="count"/> items</source><target state="translated"><x id="count"/> Einträge</target><note>Count label</note></trans-unit>
+      <trans-unit id="done.message"><source>All done.</source><target state="needs-review-translation">Fertig.</target></trans-unit>
+    </body>
+  </file>
+</xliff>

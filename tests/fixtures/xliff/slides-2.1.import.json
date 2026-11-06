@@ -1,0 +1,240 @@
+{
+  "target": "document-tabular",
+  "track": {
+    "sourceLanguage": "en",
+    "targetLanguages": [
+      "fr"
+    ],
+    "documents": [
+      {
+        "id": "document-1",
+        "name": "slides.xlf",
+        "original": "slides.xlf",
+        "dataType": "",
+        "fileId": "slides"
+      }
+    ],
+    "units": [
+      {
+        "id": "document-1.hero.title",
+        "key": "hero.title",
+        "documentId": "document-1",
+        "source": "Hello {name}",
+        "sourceMarkup": [
+          {
+            "kind": "text",
+            "text": "Hello "
+          },
+          {
+            "kind": "code",
+            "id": "<ph id=\"name\"/>",
+            "label": "{name}"
+          }
+        ],
+        "targets": [
+          {
+            "language": "fr",
+            "text": "Bonjour {name}",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": [
+              {
+                "kind": "text",
+                "text": "Bonjour "
+              },
+              {
+                "kind": "code",
+                "id": "<ph id=\"name\"/>",
+                "label": "{name}"
+              }
+            ]
+          }
+        ],
+        "context": "Slide heading",
+        "notes": [
+          "Slide heading"
+        ],
+        "reference": {
+          "version": "2.1",
+          "documentId": "document-1",
+          "fileId": "slides",
+          "unitId": "hero.title",
+          "segmentId": "s1"
+        }
+      },
+      {
+        "id": "document-1.hero.body",
+        "key": "hero.body",
+        "documentId": "document-1",
+        "source": "Open the project.",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "fr",
+            "text": "Ouvrez le projet.",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "",
+        "notes": [],
+        "reference": {
+          "version": "2.1",
+          "documentId": "document-1",
+          "fileId": "slides",
+          "unitId": "hero.body",
+          "segmentId": "s2"
+        }
+      },
+      {
+        "id": "document-1.save.button",
+        "key": "save.button",
+        "documentId": "document-1",
+        "source": "Save",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "fr",
+            "text": "Enregistrer",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "",
+        "notes": [],
+        "reference": {
+          "version": "2.1",
+          "documentId": "document-1",
+          "fileId": "slides",
+          "unitId": "save.button",
+          "segmentId": "s3"
+        }
+      },
+      {
+        "id": "document-1.close.button",
+        "key": "close.button",
+        "documentId": "document-1",
+        "source": "Close",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "fr",
+            "text": "Fermer",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "",
+        "notes": [],
+        "reference": {
+          "version": "2.1",
+          "documentId": "document-1",
+          "fileId": "slides",
+          "unitId": "close.button",
+          "segmentId": "s4"
+        }
+      },
+      {
+        "id": "document-1.export.button",
+        "key": "export.button",
+        "documentId": "document-1",
+        "source": "Export",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "fr",
+            "text": "Exporter",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "Toolbar",
+        "notes": [
+          "Toolbar"
+        ],
+        "reference": {
+          "version": "2.1",
+          "documentId": "document-1",
+          "fileId": "slides",
+          "unitId": "export.button",
+          "segmentId": "s5"
+        }
+      },
+      {
+        "id": "document-1.items.count",
+        "key": "items.count",
+        "documentId": "document-1",
+        "source": "{count} items",
+        "sourceMarkup": [
+          {
+            "kind": "code",
+            "id": "<ph id=\"count\"/>",
+            "label": "{count}"
+          },
+          {
+            "kind": "text",
+            "text": " items"
+          }
+        ],
+        "targets": [
+          {
+            "language": "fr",
+            "text": "{count} éléments",
+            "reviewState": "translated",
+            "provenanceReference": null,
+            "markup": [
+              {
+                "kind": "code",
+                "id": "<ph id=\"count\"/>",
+                "label": "{count}"
+              },
+              {
+                "kind": "text",
+                "text": " éléments"
+              }
+            ]
+          }
+        ],
+        "context": "",
+        "notes": [],
+        "reference": {
+          "version": "2.1",
+          "documentId": "document-1",
+          "fileId": "slides",
+          "unitId": "items.count",
+          "segmentId": "s6"
+        }
+      },
+      {
+        "id": "document-1.done.message",
+        "key": "done.message",
+        "documentId": "document-1",
+        "source": "Done",
+        "sourceMarkup": [],
+        "targets": [
+          {
+            "language": "fr",
+            "text": "Terminé",
+            "reviewState": "rejected",
+            "provenanceReference": null,
+            "markup": []
+          }
+        ],
+        "context": "",
+        "notes": [],
+        "reference": {
+          "version": "2.1",
+          "documentId": "document-1",
+          "fileId": "slides",
+          "unitId": "done.message",
+          "segmentId": "s7"
+        }
+      }
+    ],
+    "roundtripFile": null
+  }
+}

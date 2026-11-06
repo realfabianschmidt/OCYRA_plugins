@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.1" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="fr">
+  <file id="slides" original="slides.xlf">
+    <unit id="hero.title" name="hero.title">
+      <notes><note>Slide heading</note></notes>
+      <segment id="s1" state="translated">
+        <source>Hello <ph id="name"/></source>
+        <target>Bonjour <ph id="name"/></target>
+      </segment>
+    </unit>
+    <unit id="hero.body" name="hero.body">
+      <segment id="s2" state="translated">
+        <source>Open the project.</source>
+        <target>Ouvrez le projet.</target>
+      </segment>
+    </unit>
+    <unit id="save.button" name="save.button">
+      <segment id="s3" state="translated">
+        <source>Save</source>
+        <target>Enregistrer</target>
+      </segment>
+    </unit>
+    <unit id="close.button" name="close.button">
+      <segment id="s4" state="translated">
+        <source>Close</source>
+        <target>Fermer</target>
+      </segment>
+    </unit>
+    <unit id="export.button" name="export.button">
+      <notes><note>Toolbar</note></notes>
+      <segment id="s5" state="translated">
+        <source>Export</source>
+        <target>Exporter</target>
+      </segment>
+    </unit>
+    <unit id="items.count" name="items.count">
+      <segment id="s6" state="translated">
+        <source><ph id="count"/> items</source>
+        <target><ph id="count"/> éléments</target>
+      </segment>
+    </unit>
+    <unit id="done.message" name="done.message">
+      <segment id="s7" state="translated" subState="ocyra:rejected">
+        <source>Done</source>
+        <target>Terminé</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
