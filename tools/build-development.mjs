@@ -7,7 +7,8 @@ import { parseArgs } from 'node:util';
 import { zip } from './zip.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const PACKAGES = ['plugins/format/subrip', 'plugins/audit/foundation-policy'];
+const PACKAGES = ['subrip', 'webvtt', 'ass', 'sbv', 'sami', 'xliff', 'csv', 'i18n-json']
+  .map((name) => `plugins/format/${name}`).concat('plugins/audit/foundation-policy');
 const DOMAIN = Buffer.from('catalog-signature-v1\0');
 export const DEVELOPMENT_KEY = 'ed25519:d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a';
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');

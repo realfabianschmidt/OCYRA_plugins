@@ -30,7 +30,7 @@ test('development build is byte deterministic, covers every file and signs exact
   const first = join(root, 'one'), second = join(root, 'two');
   const proof = build({ ...options, output: first });
   assert.equal(proof.publisherKey, DEVELOPMENT_KEY);
-  assert.equal(proof.archiveCount, 2);
+  assert.equal(proof.archiveCount, 9);
   assert.deepEqual(build({ ...options, output: second }), proof);
   assert.deepEqual(inventory(first), inventory(second));
   const body = readFileSync(join(first, 'catalog/internal/catalog.json'));

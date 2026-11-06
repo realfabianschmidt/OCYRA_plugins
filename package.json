@@ -7,6 +7,7 @@
     "test": "node --test tests/foundation/*.test.mjs tests/formats/*.test.mjs",
     "test:reference": "node tests/gp02.mjs",
     "verify": "npm test",
-    "build:development": "node tools/build-development.mjs"
+    "build:development": "node tools/build-development.mjs",
+    "test:reference:gp03": "node tests/gp03.mjs"
   }
 }

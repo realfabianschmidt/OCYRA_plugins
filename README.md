@@ -5,8 +5,10 @@ ES-module entry and explicit results. The synthetic foundation audit package als
 including the structured host.data.read response. A development-only builder now produces signed fixture catalogs/archives; the app proof installs
 those in a temporary profile. Product broker/host and release publication remain open.
 
+Format packages: SubRip, WebVTT, ASS/SSA, SBV, SAMI, XLIFF, CSV and i18n JSON; see docs/briefs/88-format-packages.md.
+
 Run npm run verify, then npm run test:reference -- --reference <app GP02 directory>.
-The reference path is an explicit checkout argument; no app source is copied here.
+Also npm run test:reference:gp03 -- --reference <app GP03 directory>. The reference path is an explicit checkout argument; no app source is copied here.
 
 Historical Q1.5 evidence uses commit 0856ba3, not the current package tree. Supply a detached
 checkout of that commit to the historical spike; there is no runtime compatibility adapter.
