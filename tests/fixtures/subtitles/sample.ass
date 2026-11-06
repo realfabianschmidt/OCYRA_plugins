@@ -1,0 +1,13 @@
+[Script Info]
+Title: sample
+ScriptType: v4.00+
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize
+Style: Sign,Arial,40
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Comment: 0,0:00:00.00,0:00:01.00,Default,,0,0,0,,not a cue
+Dialogue: 1,0:00:01.00,0:00:02.50,Sign,Anna,0,0,0,,{\an8\i1}Hello, {\b1}world{\b0}\Nsecond line
+Dialogue: 0,1:00:00.01,1:00:01.00,Default,,0,0,0,,Second cue

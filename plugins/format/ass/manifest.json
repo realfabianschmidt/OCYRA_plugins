@@ -1,0 +1,38 @@
+{
+  "id": "format-plugin-ass",
+  "name": "ASS/SSA",
+  "version": "0.1.0",
+  "plugin_api_version": 1,
+  "role": "format",
+  "runtime": {
+    "mode": "quickjs"
+  },
+  "entry": "handler.js",
+  "capabilities": [],
+  "limits": {
+    "maxBatchItems": 3600,
+    "maxInputBytes": 8388608,
+    "maxOutputBytes": 8388608,
+    "timeoutMs": 5000,
+    "memoryBytes": 67108864
+  },
+  "description": "Import and export ASS and SSA subtitles.",
+  "family": "format",
+  "format": {
+    "target": "media-subtitle",
+    "directions": [
+      "import",
+      "export"
+    ],
+    "extensions": [
+      "ass",
+      "ssa"
+    ]
+  },
+  "binary": false,
+  "locales": {
+    "en": "locales/en.json",
+    "de": "locales/de.json",
+    "fr": "locales/fr.json"
+  }
+}

@@ -1,0 +1,12 @@
+<SAMI>
+<HEAD><TITLE>sample</TITLE>
+<STYLE TYPE="text/css"><!-- P { color: white } .ENCC { Name: English; lang: en-US } --></STYLE>
+</HEAD>
+<BODY>
+<SYNC Start=1000><P Class=ENCC>Hello <i>world</i><br>
+second line
+<SYNC Start=2500><P Class=ENCC>&nbsp;</P>
+<SYNC Start=3600001><P Class=ENCC>Second cue</P></SYNC>
+<SYNC Start=3601000><P Class=ENCC>&nbsp;
+</BODY>
+</SAMI>
