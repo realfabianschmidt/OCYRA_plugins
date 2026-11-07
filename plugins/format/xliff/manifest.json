@@ -10,11 +10,11 @@
   "entry": "handler.js",
   "capabilities": [],
   "limits": {
-    "maxBatchItems": 50000,
-    "maxInputBytes": 8388608,
-    "maxOutputBytes": 8388608,
+    "maxBatchItems": 100000,
+    "maxInputBytes": 33554432,
+    "maxOutputBytes": 33554432,
     "timeoutMs": 5000,
-    "memoryBytes": 67108864
+    "memoryBytes": 268435456
   },
   "description": "Import and export XLIFF 1.2 and 2.x localization files.",
   "family": "format",
